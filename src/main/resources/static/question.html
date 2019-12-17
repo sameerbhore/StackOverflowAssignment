@@ -1,0 +1,14 @@
+<div ng-controller="quesController">
+        <h1>
+                Question : <input type="text"   ng-model="Question" /> <input type='button' value="Submit" ng-click ="addQuestion()" ></input>
+            </h1>
+        <table>
+                <tr ng-repeat="question in questionArray">
+                    <td><a href='#!{{question.Id}}'>{{question.ques}}</a></td>
+                    <td>{{question.userId}}</td>
+                    <td>{{question.ansCnt}}</td>
+                    <td>{{question.createTime}}</td>
+                </tr>
+            </table>
+
+</div>

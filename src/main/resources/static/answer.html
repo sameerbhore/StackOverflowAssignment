@@ -1,0 +1,12 @@
+<div ng-controller="answerController">
+    <h1>{{question}}</h1>
+    <table>
+        <tr ng-repeat="answer in currentAnswers">
+            <td><a href=''>{{answer.ans}}</a></td>
+            <td>{{answer.userId}}</td>            
+            <td>{{answer.createTime}}</td>
+        </tr>
+    </table>
+    <textarea rows="4" cols="50" ng-model="Answer"></textarea>
+    <input type='button' value="Submit" ng-click ="addAnswer()" ></input>
+</div>
